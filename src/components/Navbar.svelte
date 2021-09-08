@@ -19,11 +19,9 @@
     margin: 0;
     padding: 0;
 }
-
 main{
     margin: 0px 80px 0px 80px;
 }
-
 a{
     position: relative;
     color: #2d3436!important;
@@ -32,7 +30,6 @@ a{
     display: inline-block;
     transition: 0.2s ease-in;
 }
-
 a:hover{
     -webkit-transform: scale(1.1);
     color: rgb(0, 0, 0) !important;
@@ -40,7 +37,6 @@ a:hover{
     transform: scale(1.1);
     transition: 0.2s ease-out;
 }
-
 .item::after{
     content: "";
     width: 100%;
@@ -74,7 +70,6 @@ a:hover{
         font-size: 18px
     }
 }
-
 @media screen and (max-width: 850px) {
     a{
         font-size: 17px;
@@ -83,7 +78,6 @@ a:hover{
     }
     
 }
-
 @media screen and (max-width: 660px) {
     .navbar-brand{
         display:block;
