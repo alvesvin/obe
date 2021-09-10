@@ -52,7 +52,6 @@ const initializeRellax = () => {
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 100vw;
     height: 100vh;
     overflow-x: hidden !important;
 }
@@ -98,7 +97,7 @@ main{
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-10px);
     }
     to {
         transform: translateY(0px);
@@ -198,8 +197,11 @@ main{
     .main-bottle{
         width: 207px !important;
     }
+    .argums{
+        transform: translateX(-25%);
+    }
     .ginger{
-        transform: translateX(-15vw) !important;
+        transform: translateX(-10vw) !important;
     }
     .red{
         transform: translateX(-27%);

@@ -1,4 +1,5 @@
 <script>
+import Details from "./components/Details.svelte";
 import Hero from "./components/Hero.svelte";
 import Navbar from "./components/Navbar.svelte";
 </script>
@@ -6,6 +7,7 @@ import Navbar from "./components/Navbar.svelte";
 <main>
 	<Navbar/>
     <Hero/>
+    <Details/>
 </main>
 
 <style>
