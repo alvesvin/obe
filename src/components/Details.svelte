@@ -8,13 +8,12 @@
         sans sucres résiduels ni ajoutés, faible en calories, sans gluten et sans 
         produits controversés. Ôbe rend compte des besoins de la nouvelle génération.
         </p>
-        <div class="imagens d-flex justify-content-center">
+        <div class="imagens">
             <img class="ginger" src="./assets/illustrations/ginger/bottlestyled.png" alt="">
             <img class="agrumes" src="./assets/illustrations/agrumes/bottlestyled.png" alt="">
             <img class="red" src="./assets/illustrations/red/bottlestyled.png" alt="">
         </div>
     </div>
-    
 </main>
 
 <style scoped>
@@ -33,23 +32,36 @@ marquee::selection{
     color:#ff7675;
 }
 .text-center{
-    font-size: 23px;
-    margin: 60px 20vw 60px 20vw ;
+    font-size: 1.6vw;
+    margin: 40px 20vw 60px 20vw;
     font-weight: 500;
 }
-
-.ginger{
-    margin-top: 5vh;
-    width: 420px;
-    height: 644px;
+.imagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-right: 4vw;
+    margin-left: 4vw;
 }
-.agrumes{
-    width: 480px;
-    height: 650px;
+.imagens img{
+    max-width: 28vw;
+    transition: 0.34s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    filter: contrast(95%);
 }
-.red{
-    margin-top: 5vh;
-    width: 400px;
-    height: 634px;
+.imagens img:hover{
+    filter: contrast(105%);
+    max-width: 30vw;
+    transition: 0.34s cubic-bezier(0.175, 0.885, 0.32, 1.975);
+}
+@media screen and (min-width: 1440px) {
+    .imagens img{
+        max-width: 420px;
+    }
+    .imagens img:hover{
+        max-width: 440px;
+    }
+    .text-center{
+        font-size: 22px;
+    }
 }
 </style>
