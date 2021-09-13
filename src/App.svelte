@@ -1,10 +1,12 @@
 <script>
 import Details from "./components/Details.svelte";
+import FollowEffects from "./components/FollowEffects.svelte";
 import Hero from "./components/Hero.svelte";
 import Navbar from "./components/Navbar.svelte";
 </script>
 
 <main>
+    <FollowEffects/>
 	<Navbar/>
     <Hero/>
     <Details/>

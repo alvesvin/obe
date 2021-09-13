@@ -1,24 +1,29 @@
 <script>
 let title = "Mouse over bottles to see details";
 let description = "";
+let hoverIcon;
 
 function gingerHover() {
+	hoverIcon.style.display = "none";
 	title = "Ôbe Saveur Citron Vert Gingembre";
 	description = "Quisque enim lectus, auctor vel aliquam auctor, dignissim ut enim. Cras ut metus risus. Morbi faucibus sapien a quam pulvinar tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer pellentesque metus at efficitur vestibulum. Morbi quis posuere libero.";
 }
 
 function agrumesHover() {
+	hoverIcon.style.display = "none";
 	title = "Ôbe Saveur Agrumes";
 	description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tortor interdum, interdum ex vel, vestibulum velit. In in urna neque. Praesent bibendum lorem libero, euismod condimentum nunc auctor ac.";
 }
 
 function redHover() {
+	hoverIcon.style.display = "none";
 	title = "Ôbe Saveur Fruits Rouges";
 	description = "Quisque convallis a arcu sed vulputate. Suspendisse a enim quis mauris consectetur feugiat in sit amet sapien. Suspendisse egestas at nibh eget pulvinar.";
 }
 
 function standard() {
-	title = "Mouse over bottles to see details";
+	hoverIcon.style.display = "initial";
+	title = "Hover the bottles to see the details";
 	description = "";
 }
 
@@ -44,6 +49,7 @@ function standard() {
         </div>
         <div class="text-center">
             <h2 class="title">{title}</h2>
+            <img class="mt-3 hover-icon" bind:this={hoverIcon} src="./assets/illustrations/mouseover-icon.png" alt="" draggable="false">
             <p class="description">{description}</p>
         </div>
     </div>
@@ -68,7 +74,6 @@ marquee::selection{
     font-size: 1.4vw;
     margin: 50px 20vw 20px 20vw;
     font-weight: 600;
-    transition: 0.3s ease;
 }
 .imagens{
     display: grid;
@@ -87,7 +92,30 @@ marquee::selection{
     transition: 0.34s cubic-bezier(0.175, 0.885, 0.32, 1.975);
     filter: contrast(105%) brightness(103%)
 }
+.hover-icon{
+    filter: grayscale(100%);
+    width: 5vw;
+    animation: animation1 2s;
+    animation-iteration-count: infinite;
+}
+.title{
+    font-size: 2.7vw;
+}
+@keyframes animation1 {
+    from {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    to {
+        transform: translateX(30px);
+    }
+}
 @media screen and (min-width: 1440px) {
+    .title{
+        font-size: 32px;
+    }
     .imagens img{
         max-width: 400px;
     }
@@ -96,6 +124,9 @@ marquee::selection{
     }
     .text-center{
         font-size: 20px;
+    }
+    .hover-icon{
+        width: 60px;
     }
 }
 </style>
