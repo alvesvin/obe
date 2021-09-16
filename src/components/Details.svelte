@@ -1,5 +1,14 @@
 <script>
-let title = "Mouse over bottles to see details";
+let title;
+let src;
+if (navigator.userAgent.match(/Mobile/)) {
+	title = "Touch the bottles to see the details";
+	src = "./assets/illustrations/touch-icon.png";
+} else {
+	src = "./assets/illustrations/mouseover-icon.png";
+	title = "Hover the bottles to see the details";
+}
+
 let description = "";
 let hoverIcon;
 
@@ -49,7 +58,7 @@ function standard() {
         </div>
         <div class="text-center">
             <h2 class="title">{title}</h2>
-            <img class="mt-3 hover-icon" bind:this={hoverIcon} src="./assets/illustrations/mouseover-icon.png" alt="" draggable="false">
+            <img class="mt-3 hover-icon" bind:this={hoverIcon} src={src} alt="" draggable="false">
             <p class="description">{description}</p>
         </div>
     </div>
@@ -58,7 +67,6 @@ function standard() {
 <style scoped>
 main{
     background-color:#fff8e4;
-    height: 2000px;
 }
 marquee{
     height: 90px;
@@ -130,6 +138,15 @@ marquee::selection{
     }
     .hover-icon{
         width: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+    marquee{
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .text-center{
+        font-size: 2vw;
     }
 }
 </style>

@@ -53,7 +53,7 @@ main{
     display: flex;
     justify-content:center;
     height: 100vh;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 .group{
     position: relative;
@@ -73,7 +73,7 @@ main{
     transition: 0.2s ease;
 }
 .main-bottle:hover{
-    width: 38vw !important;
+    width: 39vw !important;
     transition: 0.2s ease;
 }
 .ginger{
@@ -110,10 +110,15 @@ main{
         width: 400px;
     }
     .main-bottle{
-        max-width: 480px;
+        width: 480px !important;
     }
     .main-bottle:hover{
-        width: 500px;
+        width: 500px !important;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .rellax{
+        margin-top: 10vh;
     }
 }
 @media screen and (max-width: 910px) {
@@ -131,9 +136,28 @@ main{
     }
 }
 @media screen and (max-width: 590px) {
+    main{
+        justify-content:center;
+        flex-direction: column;
+    }
     .rellax{
         margin-top: 5vh;
     }
+    .group{
+        margin: 0;
+        height: 33vh;
+        width: 100vw;
+    }
+    .group img{
+        width: 35vw;
+    }
+    .main-bottle{
+        width: 42vw !important;
+        transition: 0.2s ease;
+    }
+    .main-bottle:hover{
+        width: 43vw !important;
+        transition: 0.2s ease;
+    }
 }
-
 </style>
