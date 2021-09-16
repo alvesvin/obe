@@ -22,7 +22,7 @@ function followScroll() {
 	ball2.style.top = (window.scrollY + 80) + "px";
 	ball3.style.top = (window.scrollY + 450) + "px";
 	ball4.style.top = (window.scrollY + 800) + "px";
-	ball5.style.top = (window.scrollY + 740) + "px";
+	ball5.style.top = (window.scrollY + 200) + "px";
 }
 
 document.addEventListener("scroll", followScroll);
@@ -41,9 +41,10 @@ document.addEventListener("scroll", followScroll);
 <div bind:this={ball4} class="element ball ball4"></div>
 <div bind:this={ball5} class="element ball ball5"></div>
 
-<style>
+<style scoped>
 .element{
     position: absolute;
+	overflow: hidden;
 }
 .ball{
 	width: 12px;

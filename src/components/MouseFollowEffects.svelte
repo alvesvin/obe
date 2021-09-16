@@ -40,9 +40,10 @@ document.addEventListener("wheel", onMouseMove);
 <div bind:this={ball2} class="element ball ball2"></div>
 <div bind:this={ball3} class="element ball ball3"></div>
 
-<style>
+<style scoped>
 .element{
     position: absolute;
+	overflow: hidden;
 }
 .ball{
 	width: 12px;

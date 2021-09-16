@@ -1,14 +1,14 @@
 <script>
 import Details from "./components/Details.svelte";
-import MouseFollowEffects from "./components/MouseFollowEffects.svelte";
-import ScrollFollowEffects from "./components/ScrollFollowEffects.svelte";
+// Import MouseFollowEffects from "./components/MouseFollowEffects.svelte";
+// import ScrollFollowEffects from "./components/ScrollFollowEffects.svelte";
 import Hero from "./components/Hero.svelte";
 import Navbar from "./components/Navbar.svelte";
 </script>
 
 <main>
-    <MouseFollowEffects/>
-    <ScrollFollowEffects/>
+    <!-- <MouseFollowEffects/>
+    <ScrollFollowEffects/> -->
 	<Navbar/>
     <Hero/>
     <Details/>
@@ -21,5 +21,7 @@ import Navbar from "./components/Navbar.svelte";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 </style>

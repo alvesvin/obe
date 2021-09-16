@@ -50,13 +50,54 @@ const initializeRellax = () => {
 
 <style scoped>
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content:center;
     height: 100vh;
     overflow-x: hidden !important;
 }
 .group{
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+}
+.group img{
+    position: absolute;
+    width: 30vw;
+}
+.rellax{
+    margin-top: 16vh;
+}
+.main-bottle{
+    width: 37vw !important;
+    transition: 0.2s ease;
+}
+.main-bottle:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease;
+}
+
+@media screen and (min-width: 1440px) {
+    .group img{
+        width: 400px;
+    }
+    .main-bottle{
+        max-width: 480px;
+    }
+    .main-bottle:hover{
+        width: 500px;
+    }
+}
+
+/* main{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden !important;
+    justify-content: space-between;
+}
+.group{
+    width: 480px;
 }
 .group img{
     position: absolute;
@@ -64,7 +105,7 @@ main{
 }
 .rellax{
     margin-top: 16vh;
-    margin-left: 3vw;
+    margin-left: 2.4vw;
 }
 .main-bottle{
     width: 480px !important;
@@ -155,7 +196,6 @@ main{
     .ginger{
         transform: translateX(-9vw);
     }
-
     .main-bottle{
         width: 250px !important;
     }
@@ -227,5 +267,5 @@ main{
     .red{
         transform: translateX(-31%);
     }
-}
+} */
 </style>

@@ -75,6 +75,9 @@ marquee::selection{
     margin: 50px 20vw 20px 20vw;
     font-weight: 600;
 }
+.text-center::selection{
+    background-color:rgba(255, 117, 117, 0.644);
+}
 .imagens{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
