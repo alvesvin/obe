@@ -1,5 +1,6 @@
 <script>
 import Details from "./components/Details.svelte";
+import History from "./components/History.svelte";
 // Import MouseFollowEffects from "./components/MouseFollowEffects.svelte";
 // import ScrollFollowEffects from "./components/ScrollFollowEffects.svelte";
 import Hero from "./components/Hero.svelte";
@@ -12,6 +13,7 @@ import Navbar from "./components/Navbar.svelte";
 	<Navbar/>
     <Hero/>
     <Details/>
+    <History/>
 </main>
 
 <style>

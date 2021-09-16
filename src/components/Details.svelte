@@ -62,11 +62,12 @@ function standard() {
             <p class="description">{description}</p>
         </div>
     </div>
+    <div style="height: 15vh; background-color:#fff5d9;"></div>
 </main>
 
 <style scoped>
 main{
-    background-color:#fff8e4;
+    background-color:#fff5d9;
 }
 marquee{
     height: 90px;
