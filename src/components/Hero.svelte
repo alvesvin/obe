@@ -73,7 +73,7 @@ main{
     transition: 0.2s ease;
 }
 .main-bottle:hover{
-    transform: scale(1.04);
+    width: 38vw !important;
     transition: 0.2s ease;
 }
 .ginger{
@@ -81,6 +81,29 @@ main{
 }
 .red{
     margin-top:7vh;
+}
+.ginger-bottle{
+    animation: animation1 4s;
+    animation-iteration-count: infinite;
+}
+.agrumes-bottle{
+    animation: animation1 2.5s;
+    animation-iteration-count: infinite;
+}
+.red-bottle{
+    animation: animation1 3.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+    from {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 @media screen and (min-width: 1440px) {
     .group img{
@@ -93,4 +116,24 @@ main{
         width: 500px;
     }
 }
+@media screen and (max-width: 910px) {
+    .rellax{
+        margin-top: 10vh;
+    }
+    .ginger{
+        margin-top:3vh;
+    }
+    .red{
+        margin-top:3vh;
+    }
+    .group{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .rellax{
+        margin-top: 5vh;
+    }
+}
+
 </style>
