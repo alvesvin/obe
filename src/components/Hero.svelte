@@ -137,26 +137,27 @@ main{
 }
 @media screen and (max-width: 590px) {
     main{
+        height:fit-content;
         justify-content:center;
         flex-direction: column;
     }
     .rellax{
-        margin-top: 5vh;
+        margin-top: 7vh;
     }
     .group{
         margin: 0;
-        height: 33vh;
+        height: 90vh;
         width: 100vw;
     }
     .group img{
-        width: 35vw;
+        width: 85vw;
     }
     .main-bottle{
-        width: 42vw !important;
+        width: 90vw !important;
         transition: 0.2s ease;
     }
     .main-bottle:hover{
-        width: 43vw !important;
+        width: 92vw !important;
         transition: 0.2s ease;
     }
 }

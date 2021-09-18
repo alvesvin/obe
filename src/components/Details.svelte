@@ -1,6 +1,7 @@
 <script>
 let title;
 let src;
+
 if (navigator.userAgent.match(/Mobile/)) {
 	title = "Touch the bottles to see the details";
 	src = "./assets/illustrations/touch-icon.png";
@@ -35,7 +36,6 @@ function standard() {
 	title = "Hover the bottles to see the details";
 	description = "";
 }
-
 </script>
 
 <main id="details">
@@ -62,12 +62,12 @@ function standard() {
             <p class="description">{description}</p>
         </div>
     </div>
-    <div style="height: 15vh; background-color:#fff5d9;"></div>
+    <div style="height: 15vh; background-color:rgb(255, 245, 223);"></div>
 </main>
 
 <style scoped>
 main{
-    background-color:#fff5d9;
+    background-color:rgb(255, 245, 223);
 }
 marquee{
     height: 90px;
@@ -85,6 +85,9 @@ marquee::selection{
     font-weight: 600;
 }
 .text-center::selection{
+    background-color:rgba(255, 117, 117, 0.644);
+}
+.title::selection{
     background-color:rgba(255, 117, 117, 0.644);
 }
 .imagens{
