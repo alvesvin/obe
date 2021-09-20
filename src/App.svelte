@@ -1,4 +1,6 @@
 <script>
+import Merch from "./components/Merch.svelte";
+import Image from "./components/Image.svelte";
 import Details from "./components/Details.svelte";
 import History from "./components/History.svelte";
 // Import MouseFollowEffects from "./components/MouseFollowEffects.svelte";
@@ -14,6 +16,8 @@ import Navbar from "./components/Navbar.svelte";
     <Hero/>
     <Details/>
     <History/>
+    <Image/>
+    <Merch/>
 </main>
 
 <style>

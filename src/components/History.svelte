@@ -5,20 +5,20 @@
         <a href="http://192.168.25.9:5000/">
             <h3 class="text-center">Simplement audacieux.</h3>
             <div class="quad history">
-                <img class="bottle"src="./assets/illustrations/bottle-draw.png" alt="">
+                <img class="bottle"src="./assets/illustrations/bottle-draw.png" draggable="false" alt="">
             </div>
         </a>
         <a href="http://192.168.25.9:5000/">
             <h3 class="text-center">L'Histoire de la marque.</h3>
             <div class="quad manifest">
-                <img class="th-ga"src="./assets/illustrations/th-ga.png" alt="">
+                <img class="th-ga"src="./assets/illustrations/th-ga.png" draggable="false" alt="">
             </div>
         </a>
     </div>
-    <div style="height: 25vh"></div>
 </main>
 <style scoped>
 main{
+    min-height: 100vh;
     margin: 0 !important;
     background-color: rgb(19, 19, 19);
     color: #dfe6e9; 
@@ -28,14 +28,16 @@ main{
     color: #dfe6e9;
 }
 .title{
-    margin-bottom: 5vw;
+    margin-bottom: 8vw;
     color: #dfe6e9;
 }
 .title::selection{
     background-color:rgb(65, 65, 65);
 }
 .content{
+    height: 50vh;
     justify-content: center;
+    align-items: center;
 }
 .quad{
     display: flex;
@@ -77,6 +79,7 @@ main{
 }
 @media screen and (max-width: 1000px) {
     .content{
+        height:auto;
         flex-direction: column !important;
         align-items: center;
     }
