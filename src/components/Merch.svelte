@@ -4,10 +4,13 @@
         <a href="http://192.168.25.9:5000/">
             <div class="quad first"></div>
             <h3 class="text-center">Obê sweatshirt</h3>
+            <p class="text-center">€40,00</p>
         </a>
         <a href="http://192.168.25.9:5000/">
             <div class="quad second"></div>
             <h3 class="text-center">Obê sweatshirt 2</h3>
+            <p class="text-center">€40,00</p>
+            
         </a>
     </div>
 </main>
@@ -49,7 +52,10 @@ main{
     background-image: url("../assets/merch/clothing-1-2.png");
 } 
 h3{
-    color: #333333
+    color: #333333;
+}
+p{
+    color: #333333;
 }
 @media screen and (min-width: 1440px) {
     .quad{
@@ -69,9 +75,6 @@ h3{
     }
     a{
         margin-bottom: 5vh;
-    }
-    h3{
-        font-size:4vw;
     }
     .title{
         margin-bottom: 5vh;
