@@ -113,9 +113,6 @@ marquee::selection{
     animation: animation1 2s;
     animation-iteration-count: infinite;
 }
-.title{
-    font-size: 2.7vw;
-}
 @keyframes animation1 {
     from {
         transform: translateX(30px);
@@ -127,24 +124,32 @@ marquee::selection{
         transform: translateX(30px);
     }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1925px) {
     .title{
-        font-size: 32px;
+        font-size: 52px;
     }
     .imagens img{
-        max-width: 400px;
+        max-width: 540px;
     }
     .imagens img:hover{
-        max-width: 423px;
+        max-width: 550px;
     }
     .text-center{
-        font-size: 20px;
+        font-size: 26px;
     }
     .hover-icon{
-        width: 60px;
+        width: 96px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hover-icon{
+        width: 4vw;
     }
 }
 @media screen and (max-width: 800px) {
+    .title{
+        font-size: 3vw;
+    }
     marquee{
         height: 10vw;
         font-size: 5vw;
