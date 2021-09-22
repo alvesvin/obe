@@ -1,5 +1,6 @@
 <main id="merch">
-    <h2 class="text-center title">Rejoins le Ôbe Gang! <br> #ÔBEGANG </h2>
+    <h2 class="text-center">Rejoins le Ôbe Gang!</h2>
+    <h2 class="text-center title">#ÔBEGANG</h2>
     <div class="content d-flex">
         <a href="http://192.168.25.9:5000/">
             <div class="quad first"></div>
@@ -24,6 +25,9 @@ main{
 .title{
     margin-bottom: 8vw;
 }
+.text-center::selection{
+    background-color: rgb(255, 232, 157);
+}
 .content{
     justify-content: center;
     align-items: center;
@@ -32,8 +36,8 @@ main{
     transition: .8s;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 32vw;
-    height: 32vw;
+    width: 29vw;
+    height: 29vw;
     margin: 0 4vw 1vw 4vw;
 }
 .quad:hover{
@@ -59,8 +63,8 @@ p{
 }
 @media screen and (min-width: 1440px) {
     .quad{
-        width: 480px;
-        height: 480px;
+        width: 440px;
+        height: 440px;
     }
 }
 @media screen and (max-width: 1000px) {
