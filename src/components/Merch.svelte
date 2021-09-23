@@ -21,6 +21,7 @@ main{
     min-height: 100vh;
     height:fit-content;
     padding-top: 8vh;
+    padding-bottom: 2vw;
 }
 .title{
     margin-bottom: 8vw;
