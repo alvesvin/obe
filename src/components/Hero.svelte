@@ -105,17 +105,7 @@ main{
         transform: translateY(0px);
     }
 }
-@media screen and (min-width: 1925px) {
-    .group img{
-        width: 570px;
-    }
-    .main-bottle{
-        width: 700px !important;
-    }
-    .main-bottle:hover{
-        width: 720px !important;
-    }
-}
+
 @media screen and (max-width: 1050px) {
     .rellax{
         margin-top: 10vh;

@@ -20,9 +20,11 @@
 main{
     min-height: 100vh;
     margin: 0 !important;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(19, 19, 19) !important;
     color: #dfe6e9; 
     padding-top: 8vh;
+    background: url("../assets/illustrations/bottle-draw-white.png") no-repeat;
+    background-position: left 105% bottom -20vh;
 }
 .text-center{
     color: #dfe6e9;
@@ -49,6 +51,7 @@ main{
     border-radius: 10px;
     margin: 0 2vw 0 2vw;
     transition: ease 0.3s;
+    z-index: 10;
 }
 .quad:hover{
     width: 35vw;
@@ -61,23 +64,12 @@ main{
 .bottle{
     width: 34vw;
 }
-@media screen and (min-width: 1440px) {
-    .quad{
-        width: 480px;
-        height: 450px;
-    }
-    .th-ga{
-        width: 466px;
-    }
-    .bottle{
-        width: 495px;
-    }
-    .quad:hover{
-        width: 500px;
-        height: 468px;
-    }
-}
+
 @media screen and (max-width: 1000px) {
+    main{
+        background-image: none;
+        padding-bottom: 8vh;
+    }
     .content{
         height:auto;
         flex-direction: column !important;

@@ -62,12 +62,7 @@ h3{
 p{
     color: #333333;
 }
-@media screen and (min-width: 1440px) {
-    .quad{
-        width: 440px;
-        height: 440px;
-    }
-}
+
 @media screen and (max-width: 1000px) {
     .content{
         height:auto;

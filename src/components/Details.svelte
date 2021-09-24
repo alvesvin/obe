@@ -124,24 +124,12 @@ marquee::selection{
         transform: translateX(30px);
     }
 }
-@media screen and (min-width: 1925px) {
-    .title{
-        font-size: 52px;
-    }
-    .imagens img{
-        max-width: 540px;
-    }
-    .imagens img:hover{
-        max-width: 550px;
-    }
-    .text-center{
-        font-size: 26px;
-    }
-    .hover-icon{
-        width: 96px;
-    }
-}
+
 @media screen and (min-width: 1440px) {
+    marquee{
+        height: 6vw;
+        font-size: 2.9vw;
+    }
     .hover-icon{
         width: 4vw;
     }

@@ -36,9 +36,7 @@ function parisHover() {
             <h4 class="mb-4">{auxText}</h4>
             <ul>
                 {#each shops as shop}
-                <li>{shop}</li>
-                {:else}
-                <li></li>
+                    <li>{shop}</li>
                 {/each}
             </ul>
         </div>
