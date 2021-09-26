@@ -124,7 +124,6 @@ marquee::selection{
         transform: translateX(30px);
     }
 }
-
 @media screen and (min-width: 1440px) {
     marquee{
         height: 6vw;
