@@ -52,7 +52,7 @@ const initializeRellax = () => {
 main{
     display: flex;
     justify-content:center;
-    height: 100vh;
+    min-height: 103vh;
     overflow: hidden !important;
 }
 .group{
@@ -73,7 +73,7 @@ main{
     transition: 0.2s ease;
 }
 .main-bottle:hover{
-    width: 39vw !important;
+    width: 38.3vw !important;
     transition: 0.2s ease;
 }
 .ginger{

@@ -1,13 +1,14 @@
 <script>
 let title;
 let src;
+let texts;
 
 if (navigator.userAgent.match(/Mobile/)) {
-	title = "Touch the bottles to see the details";
+	title = "Touch the bottles";
 	src = "./assets/illustrations/touch-icon.png";
 } else {
 	src = "./assets/illustrations/mouseover-icon.png";
-	title = "Hover the bottles to see the details";
+	title = "Hover the bottles";
 }
 
 let description = "";
@@ -15,26 +16,31 @@ let hoverIcon;
 
 function gingerHover() {
 	hoverIcon.style.display = "none";
-	title = "Ôbe Saveur Citron Vert Gingembre";
-	description = "Quisque enim lectus, auctor vel aliquam auctor, dignissim ut enim. Cras ut metus risus. Morbi faucibus sapien a quam pulvinar tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer pellentesque metus at efficitur vestibulum. Morbi quis posuere libero.";
+	title = "Citron Vert Gingembre";
+	description = "Ginger… Hard Seltzer!";
+	texts.style.color = "#3e8a36";
+	texts.firstChild.style.weight = "800";
 }
 
 function agrumesHover() {
 	hoverIcon.style.display = "none";
-	title = "Ôbe Saveur Agrumes";
-	description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia tortor interdum, interdum ex vel, vestibulum velit. In in urna neque. Praesent bibendum lorem libero, euismod condimentum nunc auctor ac.";
+	title = "Agrumes";
+	description = "Dès le moindre rayon de soleil tu seras toujours préparé(e)!";
+	texts.style.color = "#EE5A24";
 }
 
 function redHover() {
 	hoverIcon.style.display = "none";
-	title = "Ôbe Saveur Fruits Rouges";
-	description = "Quisque convallis a arcu sed vulputate. Suspendisse a enim quis mauris consectetur feugiat in sit amet sapien. Suspendisse egestas at nibh eget pulvinar.";
+	title = "Fruits Rouges";
+	description = "Piscine, bronzette et Ôbe!";
+	texts.style.color = "#EA2027";
 }
 
 function standard() {
 	hoverIcon.style.display = "initial";
-	title = "Hover the bottles to see the details";
+	title = "Hover the bottles";
 	description = "";
+	texts.style.color = "#333333";
 }
 </script>
 
@@ -56,7 +62,7 @@ function standard() {
             <!-- svelte-ignore a11y-mouse-events-have-key-events -->
             <img class="red" on:mouseover={redHover} on:mouseout={standard} src="./assets/illustrations/red/bottlestyled.png" alt="">
         </div>
-        <div class="text-center">
+        <div class="text-center" bind:this={texts}>
             <h2 class="title">{title}</h2>
             <img class="mt-3 hover-icon" bind:this={hoverIcon} src={src} alt="" draggable="false">
             <p class="description">{description}</p>
@@ -68,6 +74,7 @@ function standard() {
 <style scoped>
 main{
     background-color:rgb(255, 245, 223);
+    min-height: 80vh;
 }
 marquee{
     height: 90px;
@@ -131,6 +138,14 @@ marquee::selection{
     }
     .hover-icon{
         width: 4vw;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .title{
+        font-size: 1.8vw;
+    }
+    .imagens{
+        margin-bottom: 7vh;
     }
 }
 @media screen and (max-width: 800px) {
