@@ -11,7 +11,6 @@
             <div class="quad second"></div>
             <h3 class="text-center">Obê sweatshirt 2</h3>
             <p class="text-center">€40,00</p>
-            
         </a>
     </div>
 </main>

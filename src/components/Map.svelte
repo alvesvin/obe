@@ -14,7 +14,7 @@ function parisHover() {
 	hoverIcon.style.display = "none";
 	title = "Paris";
 	auxText = "in Paris we are in these establishments:";
-	shops = ["Lorem ipsum", "Dolor sit", "Amet"];
+	shops = ["Lorem ipsum", "Dolor sit ipsum", "Amet sit Lorem"];
 }
 
 </script>
@@ -34,19 +34,32 @@ function parisHover() {
             <h3 class="mb-3">{title}</h3>
             <img class="mt-3 hover-icon" bind:this={hoverIcon} src="./assets/illustrations/mouseover-icon.png" alt="" draggable="false">
             <h4 class="mb-4">{auxText}</h4>
-            <ul>
+            <ul  class="p-0">
                 {#each shops as shop}
                     <li>{shop}</li>
                 {/each}
             </ul>
         </div>
-        
+    </div>
+    <div class="text-center contact">
+        <span class="text-center mb-0">anything else?</span><br>
+        <a href="mailto: crsthian.04@gmail.com" class="contact-text h1 mt-0">Nous contacter</a>
     </div>
 </main>
-<style>
+<style scoped>
 main{
     background-color:rgb(255, 245, 223);
     padding-top: 6vh;
+    min-height: 100vh;
+}
+.contact{
+    margin-top: 16vh;
+    height: 30vh;
+    color: #333333 !important;
+}
+.contact-text{
+    color: #333333 !important;
+    font-weight: 600;
 }
 .title{
     margin-bottom: 5vw;
@@ -101,6 +114,7 @@ p:hover{
     margin-left: 28%;
     margin-top: -12%;
 }
+
 @keyframes animation1 {
     from {
         transform: translateX(50px);

@@ -1,4 +1,5 @@
 <script>
+import Footer from "./components/Footer.svelte";
 import Map from "./components/Map.svelte";
 import Merch from "./components/Merch.svelte";
 import Image from "./components/Image.svelte";
@@ -20,6 +21,7 @@ import Navbar from "./components/Navbar.svelte";
     <Image/>
     <Merch/>
     <Map/>
+    <Footer/>
 </main>
 
 <style>

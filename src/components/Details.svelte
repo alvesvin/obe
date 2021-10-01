@@ -18,7 +18,7 @@ function gingerHover() {
 	hoverIcon.style.display = "none";
 	title = "Citron Vert Gingembre";
 	description = "Ginger… Hard Seltzer!";
-	texts.style.color = "#3e8a36";
+	texts.style.color = "#118005";
 	texts.firstChild.style.weight = "800";
 }
 
