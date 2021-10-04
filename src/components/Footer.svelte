@@ -79,6 +79,11 @@ li{
     width: fit-content;
     transition: ease 0.2s;
 }
+li:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transition: ease-in 0.2s;
+}
 li:hover a{
     color: #EE5A24 !important;
     transform: scale(1.4);

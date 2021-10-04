@@ -3,6 +3,14 @@ let title = "Hover the cities to see the details";
 let hoverIcon;
 let shops = [];
 let auxText = "";
+let src;
+
+if (navigator.userAgent.match(/Mobile/)) {
+	src = "./assets/illustrations/touch-icon.png";
+} else {
+	src = "./assets/illustrations/mouseover-icon.png";
+}
+
 function standart() {
 	hoverIcon.style.display = "initial";
 	title = "Hover the cities to see the details";
@@ -32,7 +40,7 @@ function parisHover() {
         </div>
         <div class="infos text-center">
             <h3 class="mb-3">{title}</h3>
-            <img class="mt-3 hover-icon" bind:this={hoverIcon} src="./assets/illustrations/mouseover-icon.png" alt="" draggable="false">
+            <img class="mt-3 hover-icon" bind:this={hoverIcon} src="{src}" alt="" draggable="false">
             <h4 class="mb-4">{auxText}</h4>
             <ul  class="p-0">
                 {#each shops as shop}
@@ -79,7 +87,7 @@ main{
 }
 .hover-icon{
     filter: grayscale(100%);
-    width: 4.3vw;
+    width: 4vw;
     animation: animation1 2s;
     animation-iteration-count: infinite;
 }
@@ -90,7 +98,7 @@ h4{
     font-size: 1.85vw;
 }
 li{
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 ul{
     list-style: none;
@@ -124,7 +132,6 @@ p:hover{
     margin-left: 28%;
     margin-top: -12%;
 }
-
 @keyframes animation1 {
     from {
         transform: translateX(50px);
@@ -136,7 +143,6 @@ p:hover{
         transform: translateX(50px);
     }
 }
-
 @media screen and (max-width: 900px) {
     main{
         min-height: fit-content;
@@ -177,8 +183,8 @@ p:hover{
         margin-bottom: 0 !important;
         font-size: 2.6vw;
     }
-    /* .content{
-        display: none !important;
-    } */
+    .hover-icon{
+        width: 8vw;
+    }
 }
 </style>
