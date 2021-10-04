@@ -20,7 +20,7 @@ function parisHover() {
 </script>
 <main id="sommes-nous">
     <h2 class="text-center title">Où Sommes-Nous</h2>
-    <div class="content d-flex justify-content-between">
+    <div class="content d-flex">
         <div class="map">
             <div class="cities">
             <!-- svelte-ignore a11y-mouse-events-have-key-events -->
@@ -55,9 +55,9 @@ main{
 .contact{
     margin-top: 16vh;
     height: 30vh;
-    color: #333333 !important;
 }
 .contact-text{
+    margin-top: 16vh;
     color: #333333 !important;
     font-weight: 600;
 }
@@ -65,6 +65,7 @@ main{
     margin-bottom: 5vw;
 }
 .content{
+    justify-content: space-between;
     margin: 0 10vw 0 10vw;
 }
 .map{
@@ -81,6 +82,15 @@ main{
     width: 4.3vw;
     animation: animation1 2s;
     animation-iteration-count: infinite;
+}
+h3{
+    font-size: 2vw;
+}
+h4{
+    font-size: 1.85vw;
+}
+li{
+    font-size: 1.3vw;
 }
 ul{
     list-style: none;
@@ -126,14 +136,49 @@ p:hover{
         transform: translateX(50px);
     }
 }
-@media screen and (min-width: 1280px) {
+
+@media screen and (max-width: 900px) {
+    main{
+        min-height: fit-content;
+    }
+    .content{
+        transform: translateX(-3vw);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infos{
+        width: fit-content;
+    }
     .map{
-        width: 480px;
-        height: 480px;
+        margin-bottom: 20vw;
+        width: 80vw;
+        height: 80vw;
     }
     p{
-        font-size: 21.8px;
+        font-size: 3.4vw;
     }
+    .title{
+        margin-bottom: 20vw;
+    }
+    .contact{
+        margin-top: 16vw;
+        height: 30vw;
+    }
+    h3{
+        margin-bottom: 2vw !important;
+        font-size: 4vw;
+    }
+    h4{
+        margin-bottom: 2vw !important;
+        font-size: 3.6vw;
+    }
+    li{
+        margin-bottom: 0 !important;
+        font-size: 2.6vw;
+    }
+    /* .content{
+        display: none !important;
+    } */
 }
-
 </style>

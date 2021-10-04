@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "ngrok": "ngrok http 5000",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --host"
@@ -13,6 +14,7 @@
     "eslint": "^7.32.0",
     "eslint-config-xo": "^0.38.0",
     "eslint-plugin-svelte3": "^3.2.0",
+    "ngrok": "^4.2.2",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",

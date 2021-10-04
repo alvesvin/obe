@@ -22,19 +22,21 @@
             </ul>
         </div>
     </div>
-    <div class="bottom-content d-flex">
+    <div class="bottom-content d-flex ">
         <a href="/">
-            <img class="brend" src="./assets/brand.png" draggable="false" alt="">
+            <img class="brend" src="./assets/brand-white.png" draggable="false" alt="">
         </a>
-        <a href="/" class="obe-text">© 2021, Ôbe Hard Seltzer</a>
-        <a href="/">
-            <img class="insta" src="./assets/illustrations/instagram.png" draggable="false" alt="">
+        <a href="/" class="obe-text text-decoration-none">© 2021, Ôbe Hard Seltzer</a>
+        <a href="https://www.instagram.com/obedrinks/" class="d-flex insta align-items-center">
+            <p>Follow Us</p>
+            <img src="./assets/illustrations/instagram-white.png" draggable="false" alt="">
         </a>
     </div>
 </main>
 <style scoped>
 main{
     background-color: rgb(19, 19, 19);
+    padding-bottom: 1vw;
 }
 *{
     color: #dfe6e9;
@@ -45,11 +47,20 @@ main{
     align-items: center;
     margin: 2vw 15vw 1vw 15vw;
 }
+.obe-text{
+    font-weight: 500;
+    color: #dfe6e9 !important;
+}
 .brend{
     width: 5vw;
 }
-.insta{
-    width: 3vw;
+.insta p{
+    margin: 0;
+}
+.insta img{
+    margin-left: 1vw;
+    width: 2.4vw;
+    display: block;
 }
 hr{
     margin: 0;
@@ -58,21 +69,20 @@ p{
     font-weight: 500;
 }
 a{
-    color: #dfe6e9 !important;
-}
-li{
-    width: fit-content;
-    position: relative;
+    text-decoration: none;
+    color: rgba(223, 230, 233, 0.829) !important;
     transition: ease 0.2s;
 }
-li:hover{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transition: ease-in 0.2s;
-    
+li{
+    font-weight: 400;
+    color: rgba(223, 230, 233, 0.829);
+    width: fit-content;
+    transition: ease 0.2s;
 }
 li:hover a{
     color: #EE5A24 !important;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
     transition: ease-in 0.2s;
 }
 .title{
