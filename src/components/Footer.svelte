@@ -3,7 +3,7 @@
     <hr>
     <div class="content d-flex">
         <div class="interior d-flex">
-            <ul>
+            <ul class="list-unstyled">
                 <p class="title"> À propos de Ôbe Hard Seltzer</p>
                 <li>
                     Une boisson en bouteille alcoolisée et sans sucre, 
@@ -12,7 +12,7 @@
                 </li>
             </ul>
         </div>
-        <div class="interior d-flex">
+        <div class="interior d-flex list">
             <ul>
                 <p class="title">Liens Rapides</p>
                 <li><a href="/">Contact presse</a></li>
@@ -104,5 +104,42 @@ li:hover a{
 }
 ul{
     padding: 0;
+}
+@media screen and (max-width: 650px) {
+    *{
+        font-size: 2.7vw !important;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .interior{
+        width: 90vw;
+        justify-content:center;
+        align-items: center;
+    }
+    ul{
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+    }
+    .list{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .list-unstyled{
+        margin: 0vw 8vw 3vw 8vw;
+    }
+    .title{
+        margin-bottom: 5px;
+    }
+    .brend{
+        width: 8vw;
+    }
+    .insta img{
+        width: 4.4vw;
+    }
+    .bottom-content{
+        margin: 1vw 8vw 1vw 8vw;
+    }
 }
 </style>

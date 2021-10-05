@@ -1,7 +1,7 @@
 <main>
     <nav class="navbar mt-2">
         <a href="/" class="navbar-brand">
-            <img src="./assets/brand.png" draggable="false" alt="" width="70px">
+            <img src="./assets/brand.png" draggable="false" alt="">
         </a>
         <div class="nav-items">
             <a href="#home" class="item text-decoration-none mx-4">Home</a>
@@ -20,13 +20,16 @@
     padding: 0;
 }
 main{
-    margin: 0px 80px 0px 80px;
+    margin: 0 8vw 0 8vw;
+}
+img{
+    width: 4.5vw;
 }
 a{
     position: relative;
     color: #2d3436!important;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.4vw;
     display: inline-block;
     transition: 0.2s ease-in;
 }
@@ -40,11 +43,11 @@ a:hover{
 .item::after{
     content: "";
     width: 100%;
-    height: 0.175rem;
+    height: 0.2vw;
     position: absolute;
     background-color: #ff7675;
     left: 0;
-    bottom: -10px;
+    bottom: -0.2vw;
     transform: scale(0, 1);
     transition: 0.3s ease-in;
     
@@ -76,9 +79,11 @@ a:hover{
         margin-left: 7px !important;
         margin-right: 7px !important;
     }
-    
 }
 @media screen and (max-width: 660px) {
+    img{
+        width: 70px;
+    }
     .navbar-brand{
         display:block;
     }
