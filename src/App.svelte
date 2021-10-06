@@ -1,35 +1,19 @@
 <script>
-import Footer from "./components/Footer.svelte";
-import Map from "./components/Map.svelte";
-import Merch from "./components/Merch.svelte";
-import Image from "./components/Image.svelte";
-import Details from "./components/Details.svelte";
-import History from "./components/History.svelte";
-// Import MouseFollowEffects from "./components/MouseFollowEffects.svelte";
-// import ScrollFollowEffects from "./components/ScrollFollowEffects.svelte";
-import Hero from "./components/Hero.svelte";
-import Navbar from "./components/Navbar.svelte";
+  import Hero from "./components/Hero.svelte";
+  import Navbar from "./components/Navbar.svelte";
+  import Marquee from "./components/Marquee.svelte";
 </script>
 
-<main>
-    <!-- <MouseFollowEffects/>
-    <ScrollFollowEffects/> -->
-	<Navbar/>
-    <Hero/>
-    <Details/>
-    <History/>
-    <Image/>
-    <Merch/>
-    <Map/>
-    <Footer/>
-</main>
+<Navbar />
+<Hero />
+<Marquee
+  content="Boire Ôbe c’est donner à la nouvelle génération la possibilité de choisir pour elle même"
+/>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    font-family: 'Poppins';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<style global lang="postcss">
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>
