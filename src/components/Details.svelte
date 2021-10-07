@@ -40,7 +40,7 @@
   class="min-h-screen flex flex-col justify-center space-y-20 py-20"
 >
   <Text
-    class="container mx-auto text-center text-xl text-gray-500 font-medium px-3 md:text-2xl lg:px-32 md:leading-relaxed 3xl:text-4xl 3xl:leading-relaxed 3xl:px-72"
+    class="container mx-auto text-center text-xl text-gray-500 font-medium px-3 md:text-2xl lg:px-32 md:leading-relaxed"
     value="Ôbe est une boisson craft faite en France avec des ingrédients français,
     sans sucres résiduels ni ajoutés, faible en calories, sans gluten et sans
     produits controversés. Ôbe rend compte des besoins de la nouvelle génération"
@@ -71,9 +71,7 @@
   </section>
 
   <!-- Only on desktops -->
-  <section
-    class="hidden xl:flex container mx-auto space-x-8 3xl:space-x-16 details-wrapper"
-  >
+  <section class="hidden xl:flex container mx-auto space-x-8 details-wrapper">
     <section class="px-3 flex-1 relative">
       <img
         width="97px"
@@ -89,16 +87,16 @@
           class="flex border-l-8 border-gray-800 border-opacity-20 mb-8 transition-colors duration-700 {selected ===
           option
             ? option.background
-            : 'bg-gray-100'} w-full py-2 3xl:py-4 space-x-4"
+            : 'bg-gray-100'} w-full py-2 space-x-4"
           on:click={() => (selected = option)}
         >
           <img src={option.thumb} alt="" />
 
           <span class="text-gray-800 text-opacity-70">
-            <h3 class="text-2xl 3xl:text-3xl font-semibold text-left">
+            <h3 class="text-2xl font-semibold text-left">
               {option.title}
             </h3>
-            <p class="3xl:text-xl opacity-60 text-left font-medium">
+            <p class="opacity-60 text-left font-medium">
               {option.subtitle}
             </p>
           </span>
@@ -125,7 +123,7 @@
         <img
           transition:fade={{ duration: 700 }}
           draggable="false"
-          class="ml-52 transform-gpu translate-x-0.5 select-none product-picture"
+          class="ml-48 transform-gpu translate-x-0.5 select-none product-picture"
           src={options[1].picture}
           alt=""
         />
@@ -134,7 +132,7 @@
       {#if selected === options[2]}
         <img
           transition:fade={{ duration: 700 }}
-          class="ml-52 transform-gpu translate-x-0.5 select-none product-picture"
+          class="ml-48 transform-gpu translate-x-0.5 select-none product-picture"
           draggable="false"
           src={options[2].picture}
           alt=""
@@ -144,18 +142,15 @@
 
     <section class="flex-1">
       <h3
-        class="mb-2 text-xs 3xl:text-base font-bold tracking-widest max-w-max rounded-md px-1 py-0.5 text-gray-800 text-opacity-50 transition-colors duration-700 {selected.background}"
+        class="mb-2 text-xs font-bold tracking-widest max-w-max rounded-md px-1 py-0.5 text-gray-800 text-opacity-50 transition-colors duration-700 {selected.background}"
       >
         HARD SELTZER
       </h3>
 
-      <Text
-        value={selected.title}
-        class="font-bold text-5xl 3xl:text-6xl mb-8"
-      />
+      <Text value={selected.title} class="font-bold text-5xl mb-8" />
 
       <Text
-        class="text-2xl 3xl:text-3xl 3xl:leading-relaxed leading-relaxed font-medium"
+        class="text-2xl leading-relaxed font-medium"
         value={selected.body}
       />
     </section>
@@ -164,15 +159,11 @@
 
 <style lang="postcss">
   .details-wrapper {
-    height: 670px;
-
-    @media (min-width: 2160px) {
-      height: 1024px;
-    }
+    height: 50rem;
 
     & .product-picture {
-      @apply absolute;
-      height: 90%;
+      @apply absolute w-full;
+      max-height: 90%;
     }
   }
 </style>

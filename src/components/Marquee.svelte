@@ -19,7 +19,7 @@
   }
 
   p {
-    @apply font-semibold text-white text-2xl 3xl:text-3xl;
+    @apply font-semibold text-white text-2xl;
     animation-name: marquee;
     animation-timing-function: linear;
     animation-duration: 6s;

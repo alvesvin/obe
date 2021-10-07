@@ -20,7 +20,7 @@
 
 <style lang="postcss">
   img {
-    @apply transition-opacity absolute select-none;
+    @apply transition-opacity absolute select-none w-full;
     max-height: 90%;
   }
 

@@ -27,7 +27,7 @@
   }
 
   html {
-    @apply text-gray-800;
+    @apply text-gray-800 3xl:text-xl 4xl:text-4xl 5xl:text-5xl;
   }
 
   @tailwind components;
