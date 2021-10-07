@@ -17,7 +17,10 @@ module.exports = {
         sans: ["Poppins"]
       },
       colors: {
-        gray: colors.trueGray
+        gray: colors.trueGray,
+        agrumes: "#FECF9A",
+        rouges: "#FCB0BE",
+        giger: "#90CF8E"
       }
     }
   },
