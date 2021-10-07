@@ -74,8 +74,7 @@
   <section class="hidden xl:flex container mx-auto space-x-8 details-wrapper">
     <section class="px-3 flex-1 relative">
       <img
-        width="97px"
-        height="70px"
+        style="width: 6rem; height: 5rem"
         class="block absolute -right-3"
         src="/assets/misc/sheet-detail.png"
         alt=""
