@@ -12,10 +12,12 @@
   }
 </script>
 
-<nav class="container h-20 flex items-center justify-between px-4 mx-auto">
+<nav
+  class="container h-20 flex items-center justify-between px-4 mx-auto 3xl:h-24"
+>
   <a href="/">
     <img
-      class="h-12"
+      class="h-12 3xl:h-16"
       src="./assets/brand.png"
       draggable="false"
       alt="Ôbe logo"
@@ -66,7 +68,7 @@
 
 <style lang="postcss">
   ul > li > a {
-    @apply text-gray-400 hover:text-gray-800 transition-colors relative py-3;
+    @apply text-gray-400 hover:text-gray-800 transition-colors relative py-3 3xl:text-xl;
   }
 
   ul > li > a::after {
