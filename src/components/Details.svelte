@@ -37,7 +37,7 @@
 
 <main
   id="details"
-  class="min-h-screen flex flex-col justify-center space-y-20 "
+  class="min-h-screen flex flex-col justify-center space-y-20 py-20"
 >
   <Text
     class="container mx-auto text-center text-xl text-gray-500 font-medium px-3 md:text-2xl lg:px-32 md:leading-relaxed 3xl:text-4xl 3xl:leading-relaxed 3xl:px-72"
